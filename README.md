@@ -38,7 +38,7 @@ kubectl get pod
 		kubectl apply -f webapp.yaml        			
 
 Comprobamos que se ha generado correctamente con el comando get config map, kubectl get secret y para terminal con el comando kubectl get pod.
-Para añadir la opción de autoescalado. Está opción lo que hace es si nuestro contenedor supera 0% de su capacidad, como en este caso, se crearía una réplica, para evitar que colapse, asegurando su funcionamiento. Esto se conoce como alta disponibilidad(high availability). Esto lo hace hasta un máximo de 10 veces, como se especifica en el fichero:![autoscaling](https://user-images.githubusercontent.com/86802349/201473887-39c4c38a-233e-43aa-bbf9-9b4afc2a78c0.JPG)
+Para añadir la opción de autoescalado. Está opción lo que hace es si nuestro contenedor supera 80% de su capacidad, como en este caso, se crearía una réplica, para evitar que colapse, asegurando su funcionamiento. Esto se conoce como alta disponibilidad(high availability). Esto lo hace hasta un máximo de 10 veces
 
 Una vez viendo que funciona, se crea el fichero ingress.yaml
 
